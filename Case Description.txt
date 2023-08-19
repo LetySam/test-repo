@@ -1,0 +1,54 @@
+Case: 
+Introdução
+
+A RNP como uma instituição de fomento à pesquisa científica está acompanhando com bastante atenção a situação da pandemia de SARS COVID-19 no Brasil e no mundo. E, em diversos momentos tem sido chamada a colaborar, por meio de sua expertise em tecnologia e inovação, com os esforços da comunidade acadêmica e científica no entendimento da conjuntura de propagação do vírus de modo a oferecer subsídios para que as autoridades de saúde possam atuar no controle da pandemia.
+
+Uma das ações que foram demandadas à RNP foi a construção de painéis de acompanhamento das informações conjunturais da COVID no Brasil e no mundo.
+
+Os Analista de Dados da RNP trabalharam na especificação de dois painéis de dados distintos, a serem construídos em Power BI. Um relativo à conjuntura da pandemia no Brasil (Painel Brasil) e outro para a situação no mundo (Painel Mundo).  O desafio será construir tais painéis, conforme as especificações abaixo.
+
+
+
+Especificação
+
+O painel que exibirá as informações sobre o Brasil deverá utilizar os dados do Rede Covida (Fiocruz / UFBA), em: https://covid19br.wcota.me, cases-brazil-states.csv;
+O Painel Mundo deverá utilizar os dados existentes em: https://ourworldindata.org/coronavirus;
+Eles devem possibilitar a atualização diária dos dados sem necessidade de download para uma máquina cliente;
+Se necessário a população relativa dos países pode ser encontrada em: https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population;
+Se necessário, a população brasileira e de seus respectivos estados também pode ser encontrada na internet.
+ 
+
+Painel Brasil
+
+O painel que irá demonstrar a conjuntura no Brasil deverá ter as seguintes informações:
+
+Percentual da população infectada = (total de casos ÷ população) x 100;
+Total de casos desde o início da pandemia;
+Percentual de letalidade = (total de óbitos ÷ total de casos) x 100;
+Total de óbitos desde o início da pandemia;
+Média móvel de casos dos últimos sete dias = ∑ total de casos dos últimos 7 dias ÷ 7;
+Média móvel de óbitos dos últimos sete dias = ∑ total de óbitos dos últimos 7 dias ÷ 7;
+Visão gráfica da evolução de casos, do início da pandemia até hoje;
+Visão gráfica da evolução dos óbitos até hoje;
+Visão gráfica da evolução da média móvel de casos;
+Visão gráfica da evolução da média móvel de óbitos.
+Todos os valores apurados e exibições gráficas poderão ser, conforme escolha do usuário, relativas ao Brasil como um todo ou de um estado selecionado, conforme filtro que deverá existir no painel.
+
+
+
+Painel Mundo
+
+O painel demonstrando a situação da COVID-19 no mundo deve conter:
+
+Visão geográfica do foco de COVID-19 no mundo
+Visão gráfica da evolução da média móvel de casos por milhão de habitantes = (∑ (total de casos dos últimos 7 dias x 1Mi) ÷ população) ÷ 7  
+Visão gráfica da evolução da média móvel de óbitos = (∑ total de óbitos dos últimos 7 dias ÷ 7)
+Visão gráfica da evolução percentual da população vacinada com pelo menos a primeira dose por 100 habitantes
+Visão gráfica da evolução percentual da população completamente vacinada 100 habitantes
+Para efeito de comparação, no Painel Mundo o usuário poderá solicitar que as visões gráficas demonstrem os valores referentes a um único país ou a um grupo. Conforme a seleção
+
+Observações:
+
+Os Analistas de Dados definiram um Painel Brasil e outro Painel Mundo, porém o construtor pode adequar da forma que considerar mais apropriada, criando um ou mais painéis para cada contexto ou consolidando as informações em um único painel.
+As informações referentes às populações do Brasil e do mundo, não precisam ser exatas, podendo ser utilizadas quaisquer fontes com alguma razoabilidade.
+Para a avaliação do candidato serão considerados questões como implementação das fórmulas, organização dos dados, utilização apropriada dos gráficos e organização visual.
